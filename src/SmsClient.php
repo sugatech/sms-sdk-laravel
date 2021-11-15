@@ -63,15 +63,15 @@ class SmsClient
     }
 
     /**
-     * @param string $phoneNumber
+     * @param array $phoneNumbers
      * @param string $content
      * @return bool
      * @throws \Illuminate\Http\Client\RequestException
      */
-    public function send($phoneNumber, $content)
+    public function send($phoneNumbers, $content)
     {
         $params = [
-            'phone_number' => $phoneNumber,
+            'phone_numbers' => $phoneNumbers,
             'content' => $content,
         ];
 
