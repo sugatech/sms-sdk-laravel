@@ -1,6 +1,6 @@
 {
     "name": "sugatech/sms-sdk-laravel",
-    "version": "1.0.0",
+    "version": "1.0.1",
     "license": "MIT",
     "type": "library",
     "description": "Sms Service SDK for Laravel and Lumen",
