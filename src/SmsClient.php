@@ -65,14 +65,16 @@ class SmsClient
     /**
      * @param array $phoneNumbers
      * @param string $content
+     * @param bool $strict
      * @return bool
      * @throws \Illuminate\Http\Client\RequestException
      */
-    public function send($phoneNumbers, $content)
+    public function send($phoneNumbers, $content, $strict)
     {
         $params = [
             'phone_numbers' => $phoneNumbers,
             'content' => $content,
+            'strict' => $strict,
         ];
 
         return $this->request(function (PendingRequest $request) use ($params) {
